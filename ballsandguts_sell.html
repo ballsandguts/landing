@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balls & Guts — Bolas y Tripas</title>
+  <meta name="description" content="Aprendé a crear videos con IA en minutos. Sistema paso a paso para idear, producir y publicar clips con inteligencia artificial." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      /* Paleta adaptada con los tres colores del logo */
+      --bg:#1b0f2b;     /* fondo principal */
+      --fg:#f5f5f5;     /* texto base */
+      --accent:#fcd401; /* amarillo vivo */
+      --accent2:#fd626f;/* rosa neón */
+      --accent3:#22d3ee;/* celeste IA */
+      --card:#2a1540;   /* fondo de tarjetas */
+      --ring:#3d1755;   /* bordes */
+      --muted:#b5a4cc;  /* texto suave */
+    }
+    body{ background:var(--bg); color:var(--fg); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .glass{ backdrop-filter:saturate(140%) blur(8px); background:rgba(0,0,0,.4); }
+    .grad-bg{ position:fixed; inset:0; pointer-events:none; z-index:-1; }
+    .grad-bg::before{ content:""; position:absolute; inset:0; background:
+      radial-gradient(1200px 600px at 100% -20%, color-mix(in oklab, var(--accent2) 20%, transparent), transparent 60%),
+      radial-gradient(1000px 500px at -10% 10%, color-mix(in oklab, var(--accent3) 18%, transparent), transparent 50%);
+      filter:blur(6px); opacity:.9;
+    }
+    .card{ background:var(--card); border:1px solid var(--ring); }
+    .btn{ border:1px solid transparent; border-radius:1rem; padding:.75rem 1.25rem; font-weight:700; font-size:.95rem; transition:all .2s; }
+    .btn-wa{ background:var(--accent); color:var(--bg); border-color:var(--accent); }
+    .btn-tg{ background:var(--accent2); color:var(--fg); border-color:var(--accent2); }
+    .btn-alt{ background:var(--accent3); color:var(--bg); border-color:var(--accent3); }
+    .btn:hover{ transform:translateY(-2px); box-shadow:0 0 10px color-mix(in srgb, var(--accent3) 60%, transparent); }
+    .link{ color:var(--accent3); }
+    .muted{ color:var(--muted); }
+    .ring{ border-color:var(--ring); }
+    .chip{ color:var(--accent2); font-variant-numeric:tabular-nums; }
+    .brand-dot{ background:linear-gradient(135deg, var(--accent), var(--accent2)); }
+    .highlight{ color:var(--accent3); font-weight:600; }
+    .aspect-IG{ aspect-ratio:4/5; }
+    .aspect-video{ aspect-ratio:16/9; }
+    .lang-switch{ font-size:.85rem; opacity:.9 }
+    .price{ font-size:2.2rem; font-weight:900; letter-spacing:-.02em }
+    .badge{ display:inline-block; padding:.25rem .6rem; border-radius:.75rem; background:linear-gradient(90deg, var(--accent3), var(--accent2)); color:var(--bg); font-size:.75rem; font-weight:700 }
+    .note{ font-size:.8rem }
+  </style>
+</head>
+<body>
+  <div class="grad-bg" aria-hidden="true"></div>
+
+  <!-- ======== SPAÑOL ======== -->
+  <div id="app-es" hidden>
+    <header class="sticky top-0 z-30 border-b ring glass" style="border-color:var(--ring)">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        <a href="#top-es" class="inline-flex items-center gap-2">
+          <span class="h-8 w-8 rounded-xl brand-dot"></span>
+          <span class="font-semibold tracking-tight">Balls &amp; Guts</span>
+        </a>
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="#curso-es" class="hover:text-[var(--accent3)]">Curso</a>
+          <a href="#instagram-es" class="hover:text-[var(--accent3)]">Instagram</a>
+          <a href="#youtube-es" class="hover:text-[var(--accent3)]">YouTube</a>
+          <a href="#pdf-es" class="hover:text-[var(--accent3)]">PDF</a>
+          <a href="#contacto-es" class="hover:text-[var(--accent3)]">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="btn-to-en" class="lang-switch btn-alt">EN</button>
+          <a href="https://wa.me/5491112345678" target="_blank" rel="noreferrer" class="btn btn-wa">WhatsApp</a>
+          <a href="https://t.me/tu_usuario" target="_blank" rel="noreferrer" class="btn btn-tg">Telegram</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top-es" class="mx-auto max-w-6xl px-4 pt-16 pb-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <section>
+          <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">
+            Creá <span class="highlight">videos con IA</span><br />que la <span style="color:var(--accent)">rompan</span> en redes.
+          </h1>
+          <p class="mt-5 text-base md:text-lg muted">Te mostramos nuestro sistema paso a paso para idear, producir y publicar clips cortos con IA. Minimalista, práctico y 100% accionable.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://wa.me/5491112345678" target="_blank" class="btn btn-wa">Hablá por WhatsApp</a>
+            <a href="#curso-es" class="btn btn-alt">Ver cómo funciona</a>
+          </div>
+          <p class="mt-4 text-xs muted">Sin humo. Sin tecnicismos raros. Resultados reales.</p>
+        </section>
+        <section>
+          <div class="relative rounded-3xl overflow-hidden card shadow-2xl">
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+              <source src="" type="video/mp4" />
+            </video>
+            <div class="absolute inset-x-0 bottom-0 p-4 text-xs md:text-sm" style="background:linear-gradient(180deg, transparent, rgba(0,0,0,.7))">
+              <span class="muted">Mirá cómo generamos y publicamos contenido con IA en tiempo real.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section id="curso-es" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl p-6 card">
+          <div class="text-sm font-mono chip">Paso 01</div>
+          <h3 class="mt-2 text-xl font-semibold highlight">Ideación</h3>
+          <p class="mt-2 text-sm muted">Frameworks virales para encontrar ángulos que funcionen.</p>
+        </div>
+        <div class="rounded-3xl p-6 card">
+          <div class="text-sm font-mono chip">Paso 02</div>
+          <h3 class="mt-2 text-xl font-semibold" style="color:var(--accent3)">Producción IA</h3>
+          <p class="mt-2 text-sm muted">Voz, video, edición y subtítulos automáticos.</p>
+        </div>
+        <div class="rounded-3xl p-6 card">
+          <div class="text-sm font-mono chip">Paso 03</div>
+          <h3 class="mt-2 text-xl font-semibold" style="color:var(--accent)">Publicación</h3>
+          <p class="mt-2 text-sm muted">Automatizá reels y shorts en múltiples cuentas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram-es" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">Del Instagram</h2>
+        <a href="https://instagram.com/bolasytripas" target="_blank" rel="noreferrer" class="text-sm hover:opacity-80 link">Ver perfil →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-IG overflow-hidden rounded-2xl card">
+          <iframe title="IG 1" src="https://www.instagram.com/p/C9Vq1x8O8XH/embed" class="w-full h-full" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+        <div class="aspect-IG overflow-hidden rounded-2xl card">
+          <iframe title="IG 2" src="https://www.instagram.com/p/C8kZfQ4sW3n/embed" class="w-full h-full" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+        <div class="aspect-IG overflow-hidden rounded-2xl card">
+          <iframe title="IG 3" src="https://www.instagram.com/p/C7y9uA1bT0p/embed" class="w-full h-full" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+      </div>
+      <script async src="https://www.instagram.com/embed.js"></script>
+    </section>
+
+    <!-- YouTube -->
+    <section id="youtube-es" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">Del canal de YouTube</h2>
+        <a href="https://www.youtube.com/@bolasytripas" target="_blank" rel="noreferrer" class="text-sm hover:opacity-80 link">Ver canal →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-video overflow-hidden rounded-2xl card">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video overflow-hidden rounded-2xl card">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video overflow-hidden rounded-2xl card">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="YouTube 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF a la venta -->
+    <section id="pdf-es" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="rounded-3xl p-8 md:p-12 card">
+        <div class="flex items-center justify-between flex-wrap gap-3">
+          <h2 class="text-2xl md:text-3xl font-extrabold">Guía PDF: <span class="highlight">Videos con IA que venden</span></h2>
+          <span class="badge">Nuevo</span>
+        </div>
+        <p class="mt-3 muted max-w-2xl">Frameworks, prompts y checklists para crear, editar y publicar contenido corto con IA. Entregable descargable (PDF).</p>
+        <div class="mt-6 flex items-end gap-6 flex-wrap">
+          <div>
+            <div class="price" style="color:var(--accent)">$19</div>
+            <div class="note muted">Precio de lanzamiento</div>
+          </div>
+          <div class="flex gap-3 flex-wrap">
+            <!-- Reemplazá los href por tus enlaces reales de checkout -->
+            <a class="btn btn-wa" href="https://buy.stripe.com/tu-link" target="_blank" rel="noreferrer">Pagar con tarjeta / Apple&nbsp;Pay</a>
+            <a class="btn btn-tg" href="https://mpago.la/tu-link" target="_blank" rel="noreferrer">Pagar en ARS (MercadoPago)</a>
+            <a class="btn btn-alt" href="https://www.paypal.com/checkoutnow?token=TU_TOKEN" target="_blank" rel="noreferrer">PayPal</a>
+          </div>
+        </div>
+        <ul class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
+          <li>✔️ 40+ prompts editables</li>
+          <li>✔️ Checklist de publicación</li>
+          <li>✔️ Enlace de descarga post‑pago</li>
+        </ul>
+        <p class="mt-4 note muted">Configurar en Stripe/MercadoPago/PayPal la <strong>URL de éxito</strong> a una página de gracias con el link de descarga del PDF o envío automático por email.</p>
+      </div>
+    </section>
+
+    <section id="contacto-es" class="mx-auto max-w-6xl px-4 pb-24">
+      <div class="rounded-3xl p-8 md:p-12 card text-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold">¿Querés aplicar esto a tu marca?</h3>
+        <p class="mt-3 max-w-2xl mx-auto muted">Te ayudamos a lanzar tu máquina de contenido con IA: del guión al posteo. Charlamos 10 minutos y te mostramos cómo sería para tu caso.</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <a href="https://wa.me/5491112345678" target="_blank" rel="noreferrer" class="btn btn-wa">Escribime por WhatsApp</a>
+          <a href="https://t.me/tu_usuario" target="_blank" rel="noreferrer" class="btn btn-tg">O por Telegram</a>
+        </div>
+        <p class="mt-3 text-xs muted">Respuesta en el día · Cupos limitados mensuales</p>
+      </div>
+    </section>
+
+    <footer class="border-t" style="border-color:var(--ring)">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-xs flex flex-col md:flex-row items-center justify-between gap-2 muted">
+        <div>© <span id="y-es"></span> Balls &amp; Guts · Bolas y Tripas</div>
+        <div class="flex items-center gap-4">
+          <a href="#curso-es" class="hover:opacity-80">Curso</a>
+          <a href="#instagram-es" class="hover:opacity-80">Instagram</a>
+          <a href="#youtube-es" class="hover:opacity-80">YouTube</a>
+          <a href="#pdf-es" class="hover:opacity-80">PDF</a>
+          <a href="#contacto-es" class="hover:opacity-80">Contacto</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ======== ENGLISH ======== -->
+  <div id="app-en" hidden>
+    <header class="sticky top-0 z-30 border-b ring glass" style="border-color:var(--ring)">
+      <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        <a href="#top-en" class="inline-flex items-center gap-2">
+          <span class="h-8 w-8 rounded-xl brand-dot"></span>
+          <span class="font-semibold tracking-tight">Balls &amp; Guts</span>
+        </a>
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="#course-en" class="hover:text-[var(--accent3)]">Course</a>
+          <a href="#instagram-en" class="hover:text-[var(--accent3)]">Instagram</a>
+          <a href="#youtube-en" class="hover:text-[var(--accent3)]">YouTube</a>
+          <a href="#pdf-en" class="hover:text-[var(--accent3)]">PDF</a>
+          <a href="#contact-en" class="hover:text-[var(--accent3)]">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="btn-to-es" class="lang-switch btn-alt">ES</button>
+          <a href="https://wa.me/5491112345678" target="_blank" rel="noreferrer" class="btn btn-wa">WhatsApp</a>
+          <a href="https://t.me/tu_usuario" target="_blank" rel="noreferrer" class="btn btn-tg">Telegram</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top-en" class="mx-auto max-w-6xl px-4 pt-16 pb-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <section>
+          <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">
+            Create <span class="highlight">AI videos</span><br />that <span style="color:var(--accent)">crush it</span> on social.
+          </h1>
+          <p class="mt-5 text-base md:text-lg muted">We teach our step‑by‑step system to ideate, produce, and publish short AI‑powered clips. Minimal, practical, and 100% actionable.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://wa.me/5491112345678" target="_blank" class="btn btn-wa">Chat on WhatsApp</a>
+            <a href="#course-en" class="btn btn-alt">See how it works</a>
+          </div>
+          <p class="mt-4 text-xs muted">No fluff. No jargon. Real results.</p>
+        </section>
+        <section>
+          <div class="relative rounded-3xl overflow-hidden card shadow-2xl">
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+              <source src="" type="video/mp4" />
+            </video>
+            <div class="absolute inset-x-0 bottom-0 p-4 text-xs md:text-sm" style="background:linear-gradient(180deg, transparent, rgba(0,0,0,.7))">
+              <span class="muted">Watch how we generate and publish AI content in real time.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section id="course-en" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl p-6 card">
+          <div class="text-sm font-mono chip">Step 01</div>
+          <h3 class="mt-2 text-xl font-semibold highlight">Ideation</h3>
+          <p class="mt-2 text-sm muted">Viral frameworks to find angles that work.</p>
+        </div>
+        <div class="rounded-3xl p-6 card">
+          <div class="text-sm font-mono chip">Step 02</div>
+          <h3 class="mt-2 text-xl font-semibold" style="color:var(--accent3)">AI Production</h3>
+          <p class="mt-2 text-sm muted">Voice, video, editing, and auto‑captions.</p>
+        </div>
+        <div class="rounded-3xl p-6 card">
+          <div class="text-sm font-mono chip">Step 03</div>
+          <h3 class="mt-2 text-xl font-semibold" style="color:var(--accent)">Publishing</h3>
+          <p class="mt-2 text-sm muted">Automate reels and shorts across multiple accounts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram-en" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">From Instagram</h2>
+        <a href="https://instagram.com/bolasytripas" target="_blank" rel="noreferrer" class="text-sm hover:opacity-80 link">View profile →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-IG overflow-hidden rounded-2xl card">
+          <iframe title="IG 1" src="https://www.instagram.com/p/C9Vq1x8O8XH/embed" class="w-full h-full" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+        <div class="aspect-IG overflow-hidden rounded-2xl card">
+          <iframe title="IG 2" src="https://www.instagram.com/p/C8kZfQ4sW3n/embed" class="w-full h-full" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+        <div class="aspect-IG overflow-hidden rounded-2xl card">
+          <iframe title="IG 3" src="https://www.instagram.com/p/C7y9uA1bT0p/embed" class="w-full h-full" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+      </div>
+      <script async src="https://www.instagram.com/embed.js"></script>
+    </section>
+
+    <!-- YouTube -->
+    <section id="youtube-en" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">From the YouTube channel</h2>
+        <a href="https://www.youtube.com/@bolasytripas" target="_blank" rel="noreferrer" class="text-sm hover:opacity-80 link">View channel →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-video overflow-hidden rounded-2xl card">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video overflow-hidden rounded-2xl card">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video overflow-hidden rounded-2xl card">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="YouTube 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF for sale -->
+    <section id="pdf-en" class="mx-auto max-w-6xl px-4 py-16">
+      <div class="rounded-3xl p-8 md:p-12 card">
+        <div class="flex items-center justify-between flex-wrap gap-3">
+          <h2 class="text-2xl md:text-3xl font-extrabold">PDF Guide: <span class="highlight">AI Videos that Sell</span></h2>
+          <span class="badge">New</span>
+        </div>
+        <p class="mt-3 muted max-w-2xl">Frameworks, prompts and checklists to create, edit and publish short‑form AI content. Downloadable (PDF).</p>
+        <div class="mt-6 flex items-end gap-6 flex-wrap">
+          <div>
+            <div class="price" style="color:var(--accent)">$19</div>
+            <div class="note muted">Launch price</div>
+          </div>
+          <div class="flex gap-3 flex-wrap">
+            <!-- Replace href with your live checkouts -->
+            <a class="btn btn-wa" href="https://buy.stripe.com/your-link" target="_blank" rel="noreferrer">Card / Apple&nbsp;Pay</a>
+            <a class="btn btn-tg" href="https://mpago.la/your-link" target="_blank" rel="noreferrer">Pay in ARS (MercadoPago)</a>
+            <a class="btn btn-alt" href="https://www.paypal.com/checkoutnow?token=YOUR_TOKEN" target="_blank" rel="noreferrer">PayPal</a>
+          </div>
+        </div>
+        <ul class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
+          <li>✔️ 40+ editable prompts</li>
+          <li>✔️ Publishing checklist</li>
+          <li>✔️ Download link after payment</li>
+        </ul>
+        <p class="mt-4 note muted">Configure the provider <strong>success URL</strong> to a thank‑you page with the PDF download link, or send it automatically by email.</p>
+      </div>
+    </section>
+
+    <section id="contact-en" class="mx-auto max-w-6xl px-4 pb-24">
+      <div class="rounded-3xl p-8 md:p-12 card text-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold">Want this for your brand?</h3>
+        <p class="mt-3 max-w-2xl mx-auto muted">We help you launch your AI content machine—from script to posting. Let's talk for 10 minutes and show you what it would look like for you.</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <a href="https://wa.me/5491112345678" target="_blank" rel="noreferrer" class="btn btn-wa">Message me on WhatsApp</a>
+          <a href="https://t.me/tu_usuario" target="_blank" rel="noreferrer" class="btn btn-tg">Or on Telegram</a>
+        </div>
+        <p class="mt-3 text-xs muted">Same‑day reply · Limited monthly spots</p>
+      </div>
+    </section>
+
+    <footer class="border-t" style="border-color:var(--ring)">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-xs flex flex-col md:flex-row items-center justify-between gap-2 muted">
+        <div>© <span id="y-en"></span> Balls &amp; Guts · Bolas y Tripas</div>
+        <div class="flex items-center gap-4">
+          <a href="#course-en" class="hover:opacity-80">Course</a>
+          <a href="#instagram-en" class="hover:opacity-80">Instagram</a>
+          <a href="#youtube-en" class="hover:opacity-80">YouTube</a>
+          <a href="#pdf-en" class="hover:opacity-80">PDF</a>
+          <a href="#contact-en" class="hover:opacity-80">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Dynamic year
+    document.getElementById('y-es')?.append(new Date().getFullYear());
+    document.getElementById('y-en')?.append(new Date().getFullYear());
+
+    // i18n: auto-detect + manual toggle (persist)
+    const $es = document.getElementById('app-es');
+    const $en = document.getElementById('app-en');
+    const setLang = (lang) => {
+      const isEN = lang?.toLowerCase().startsWith('en');
+      $en.hidden = !isEN; $es.hidden = isEN;
+      document.documentElement.lang = isEN ? 'en' : 'es';
+      const desc = document.querySelector('meta[name="description"]');
+      if (isEN) {
+        desc?.setAttribute('content', 'Learn to create AI videos in minutes. A step-by-step system to ideate, produce, and publish AI-powered clips.');
+      } else {
+        desc?.setAttribute('content', 'Aprendé a crear videos con IA en minutos. Sistema paso a paso para idear, producir y publicar clips con inteligencia artificial.');
+      }
+      localStorage.setItem('lang', isEN ? 'en' : 'es');
+    };
+    const preferred = localStorage.getItem('lang') || navigator.language || 'es';
+    setLang(preferred);
+    document.getElementById('btn-to-en')?.addEventListener('click', () => setLang('en'));
+    document.getElementById('btn-to-es')?.addEventListener('click', () => setLang('es'));
+  </script>
+</body>
+</html>
